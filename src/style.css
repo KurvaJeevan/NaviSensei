@@ -1,0 +1,874 @@
+@import "tailwindcss";
+
+*{
+
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    font-family:Inter, sans-serif;
+}
+#logo{
+  width: 130px;
+}
+.section1 {
+  height: 735px;
+  width:100%;
+  padding: 20px;
+  background-color: #E0F8F2;
+  position: relative; /* Keep heroimage inside flow reference */
+  overflow: hidden;
+}
+
+#Header{
+  padding: 10px 0px 10px 100px;
+  display: flex;
+  width: 100%;
+
+
+}
+#part1{
+  flex-basis: 10%;
+}
+.part2{
+  flex-basis: 50%;
+  display: flex;
+  justify-content: end;
+  padding-right: 1vw;
+  align-items: center;
+  gap: 5.5vw;
+}
+.part3{
+  flex-basis: 40%;
+  display: flex;
+  padding-left: 3vw;
+  gap: 2.8vw;
+}
+.hlink{
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-size:1.48vw;
+  color: black;
+}
+.login-btn {
+
+  border-radius: 21px;
+  background: #fff;
+  box-shadow: 5px 5px 0px #2E2F35;
+  color: #000;
+  margin: auto 0;
+  padding: 0.7vw 1.4vw;
+  border: 3px solid #2E2F35;
+  font-weight: 600;
+  font-size: 1.44vw;
+  
+}
+
+.register-btn {
+  border-radius: 21px;
+  background: #FF1C1D;
+  box-shadow: 5px 5px 0px #2E2F35;
+  color: #fff;
+  margin: auto 0;
+  padding: 0.7vw 1.4vw;
+  border: 3px solid #2E2F35;
+  font-weight: 600;
+  font-size: 1.44vw;
+}
+.herosection{
+  padding-left: 6.52vw;
+  padding-top: 20px;
+  position: relative;
+
+  /* overflow: hidden; */
+}
+.hero-title {
+  color: #000;
+  letter-spacing: -2.88px;
+  font: 600 4.12vw Inter, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  z-index: 12;
+
+}
+
+.hero-subtitle {
+  width: 973px;
+  overflow: hidden;
+  color: #FF1C1D;
+  letter-spacing: -2.72px;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  z-index: 10;
+  font: 850 3.73vw "FONTSPRING DEMO - Freigeist Black", -apple-system, Roboto, Helvetica, sans-serif;
+}
+.heroIcons{
+  margin-top: 1.9rem;
+  height: 50px;
+}
+
+.hero-description {
+  align-self: stretch;
+  margin-top: 25px;
+  width: 582px;
+  gap: 10px;
+  color: #58595D;
+  font: 500 25px/59px Inter, sans-serif;
+
+  margin-bottom: 20px;
+  z-index: 10;
+
+}
+.footer{
+  display: flex;
+}
+.cta-button {
+  border-radius: 26px;
+  background: #FF1C1D;
+  box-shadow: 5px 5px 0px #2E2F35;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2.1px;
+  margin: auto 0;
+  padding: 18px 29px;
+  font-size: 22px;
+  font-weight: 700;
+  border: 3px solid #2E2F35;
+  word-wrap: break-word;
+}
+.instructor-rating {
+
+  display: flex;
+  min-width: 240px;
+  flex-direction: column;
+  justify-content: start;
+  z-index: 10;
+
+  margin: auto 0;
+}
+
+.rating-images {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  justify-content: start;
+  z-index: 10;
+
+}
+.rating-text {
+  align-self: stretch;
+  margin-top: 4px;
+  width: 100%;
+  gap: 10px;
+  color: #2E2F35;
+  text-align: center;
+  font: 500 22px/42px Inter, sans-serif;
+  z-index: 10;
+}
+.hero-title,
+.hero-subtitle,
+.hero-description,
+.heroIcons,
+.instructor-rating,
+.rating-images,
+.rating-text {
+  position: relative; /* Required for z-index to take effect */
+  z-index: 10; /* Above the image */
+}
+.heroimage {
+  position: absolute;
+  z-index: 0;
+  height: 550px;
+  right: -20px;
+  top: 90px;
+}
+.stopimage{
+  transform: rotateY(70deg);
+}
+.section2{
+  height: 90vh;
+  padding-top: 120px;
+  padding-left: 50px;
+  font-family: Inter, sans-serif;
+}
+
+.section-title {
+  color: #2e2f35;
+  letter-spacing: -3.5px;
+  text-align: center;
+  align-self: center;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: Inter, sans-serif;
+  font-size: 88px;
+}
+
+.highlight-text {
+  font-family: "FONTSPRING DEMO - Freigeist Black", -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 850;
+  color: #ff1c1d;
+}
+.instruction-boxes{
+  display: flex;
+  gap: 40px;
+  margin: 80px 20px 40px 40px;
+}
+.instructor-box{
+  height: 200px;
+  width: 300px;
+  background-color: #000;
+  overflow: hidden;
+}
+.instruction-boxes .instructor-box img{
+  object-fit: cover;
+
+  height: 200px;
+}
+/* ========================= */
+/* HERO IMAGE RESPONSIVENESS */
+/* ========================= */
+.heroimage {
+  height: 550px;
+  max-width: 100%;
+}
+
+@media (max-width:1312px) {
+  .heroimage {
+    height: 450px;
+    right: -20px;
+
+  }
+  #Header{
+    padding-left: 60px;
+  }
+  .section1{
+    height: 700px;
+  }
+  .herosection{
+    padding-left: 60px;
+  }
+  .hero-title {
+    font-size: 55px;
+  }
+  .hero-subtitle {
+    font-size: 50px;
+  }
+  .part2{
+    gap: 60px;
+  }
+  .section2{
+    padding-left: 40px;
+  }
+  .instruction-boxes{
+    gap: 30px;
+    margin-left: 50px;  
+  }
+  .instructor-box{
+    height: 180px;
+    width: 250px;
+  }
+  .instruction-boxes .instructor-box img{
+    object-fit: cover;
+    height: 180px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .heroimage {
+    height: 420px;
+    right: -20px;
+
+  }
+   #Header{
+    padding-left: 40px;
+  }
+  .herosection{
+    padding-left: 40px;
+  }
+  .hero-title {
+    font-size: 50px;
+  }
+  .section1{
+    height: 650px;
+  }
+  .hero-subtitle {
+    font-size: 45px;
+  }
+  .part2{
+    gap: 40px;
+  }
+  .hlink{
+  font-size: 1.3rem;
+  }
+  .login-btn{
+    font-size: 18px;
+  }
+  .register-btn{
+    font-size: 18px;
+  }
+  #logo{
+    width: 100px;
+  }
+  .section2{
+    padding-left: 20px;
+  }
+ .section-title{
+  font-size: 75px;
+ }
+  .instruction-boxes{
+    gap: 25px;
+    margin-left: 30px;  
+  }
+  .instructor-box{
+    height: 150px;
+    width: 240px;
+  }
+  .instruction-boxes .instructor-box img{
+    object-fit: cover;
+    height: 150px;
+    width: 240px;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .heroimage {
+    height: 400px;
+    width: 500px;
+    right: -20px;
+  }
+  .section1{
+    height: 580px;
+  }
+  .hero-title {
+    font-size: 48px;
+  }
+  #Header{
+    padding-left: 20px;
+  }
+  .herosection{
+    padding-left: 20px;
+  }
+  .hero-subtitle {
+    font-size: 43px;
+  }
+  .hero-description {
+    font-size: 22px;
+    line-height: 45px;
+  }
+   .part2{
+    gap: 25px;
+  }
+  .part3{
+    gap:20px;
+  }
+  .hlink{
+  font-size: 1.1rem;
+  }
+  .login-btn{
+    font-size: 15px;
+  }
+  .register-btn{
+    font-size: 15px;
+  }
+  #logo{
+    width: 80px;
+  }
+  .section2{
+    padding-left: 10px;
+    height: 550px;
+    padding-top: 80px;
+  }
+
+ .section-title{
+  font-size: 65px;
+ }
+  .instruction-boxes{
+    gap: 25px;
+    margin-left: 20px;  
+  }
+  .instructor-box{
+    height: 150px;
+    width: 210px;
+  }
+  .instruction-boxes .instructor-box img{
+    object-fit: cover;
+    height: 150px;
+    width: 210px;
+  }
+
+}
+
+@media (max-width: 825x) {
+  .heroimage {
+    /* height: 310px; */
+    position: static; /* Let it flow naturally on mobile */
+    margin-top: 20px;
+  }
+
+  .herosection {
+    padding-left: 20px;
+    text-align: center;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  .hlink{
+  font-size: 1rem;
+  }
+  .login-btn{
+    font-size: 12px;
+  }
+  .register-btn{
+    font-size: 8px;
+  }
+  #logo{
+    width: 80px;
+  }
+  .section2{
+    padding-left: 10px;
+    height: 550px;
+    padding-top: 80px;
+  }
+
+ .section-title{
+  font-size: 65px;
+ }
+  .instruction-boxes{
+    gap: 25px;
+    margin-left: 20px;  
+  }
+  .instructor-box{
+    height: 150px;
+    width: 210px;
+  }
+  .instruction-boxes .instructor-box img{
+    object-fit: cover;
+    height: 150px;
+    width: 210px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 38px;
+  }
+  .hero-subtitle {
+    font-size: 32px;
+    width: auto;
+  }
+  .hero-description {
+    font-size: 18px;
+    width: auto;
+    line-height: 30px;
+  }
+}
+
+.section3{
+  background-color: #e8ebf3;
+  height: 735px;
+  padding: 80px;
+  padding-top: 60px;
+  padding-bottom: 0px;
+}
+.section3part1{
+  flex-basis: 20%;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section3part2{
+  flex-basis: 40%;
+  
+  justify-content: center;
+  align-items: end;
+  gap: 20px;
+}
+.section3part3{
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-value {
+  color: #2e2f35;
+  letter-spacing: -3.5px;
+  text-align: center;
+  align-self: stretch;
+  margin: 0 0;
+  font: 700 94px/1 Inter, sans-serif;
+  width: fit-content;
+  /* padding-left: 40px; */
+}
+.feature-items{
+  margin-top: 80px;
+  display: flex;
+  gap: 80px;
+  align-items: end;
+  justify-content: center;
+  /* margin-bottom: 80px; */
+  padding-left: 100px;
+}
+.feature-bar-big{
+    align-items: flex-end;
+  border-radius: 26px;
+  background-color: #ff1c1d;
+  box-shadow: 5px 5px 0px #2e2f35;
+  display: flex;
+  width: 150px;
+  height: 250px;
+  border: 3px solid #2e2f35;
+   color: black;
+
+}
+.feature-bar-small{
+  align-items: flex-end;
+  border-radius: 26px;
+  background-color: #e2e2e2;
+  box-shadow: 5px 5px 0px #2e2f35;
+  display: flex;
+  width: 170px;
+  height: 98px;
+  border: 3px solid #2e2f35;
+}
+.feature-bar-value{
+    color: black;
+font-size: 24.48px;
+
+font-weight: 700;
+line-height: 38.47px;
+word-wrap: break-word;
+text-align: center;
+font-family: Inter, sans-serif;
+}
+
+.feature-description {
+  color: #58595d;
+  text-align: center;
+  margin: 53px 0 -36px;
+  font: 500 23px/38px Inter, sans-serif;
+  width: 750px;
+  align-items: center;
+}
+.section3footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section4{
+  background-color: #97d6df;
+  padding: 20px;
+  padding-left: 50px;
+  height: 735px;
+}
+.cta-text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: #58595d;
+  font: 500 26px/38px Inter, sans-serif;
+  width: 60%;
+
+}
+.cta-container{
+  display: flex;
+
+}
+.cta-image {
+  /* position: absolute; */
+  object-fit: contain;
+  right: 0px;
+}
+
+.cta-button2-container {
+  display: flex;
+  align-items: end;
+  gap: 28px;
+  font-family: Inter, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #000000c0;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin: 36px 0 0 57px;
+}
+
+.cta-button2 {
+  align-self: stretch;
+  border-radius: 21px;
+  background-color: #ff1c1d;
+  box-shadow: 5px 5px 0px #2e2f35;
+  gap: 10px;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  line-height: 1;
+  width: 204px;
+  padding: 14px 34px;
+  border: 3px solid #2e2f35;
+}
+.section5{
+  background-color: #97d6df;
+  padding: 20px;
+  padding-left: 50px;
+  height: 735px;
+
+}
+.cta-image2{
+  /* position: absolute; */
+  object-fit: contain;
+  margin-right: 10px;
+  left: 0px;
+}
+.cta-text2{
+  color: #58595d;
+  font: 500 24px/38px Inter, sans-serif;
+  width: 55%;
+  flex-direction: column;
+  gap: 12px;
+}
+.cta-text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: #58595d;
+  font: 500 26px/38px Inter, sans-serif;
+  width: 60%;
+
+}
+
+
+.offer-title {
+  color: rgba(46, 47, 53, 1);
+  font-size: 74px;
+  font-weight: 700;
+  line-height: 1.8;
+  letter-spacing: -3.5px;
+}
+.section6{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px;
+  height: 1400px;
+  background-color: rgba(232, 235, 243, 1);
+  padding-top: 50px;
+}
+.brand-name {
+  font-family: "FONTSPRING DEMO - Freigeist Black", -apple-system, Roboto,
+    Helvetica, sans-serif;
+  font-weight: 500;
+  color: rgba(255, 28, 29, 1);
+}
+.subtitle-wrapper {
+  font-size: 60px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.subtitle-highlight {
+  color: rgba(68, 121, 127, 1);
+    font-family: 'Covered By Your Grace', cursive;
+
+  
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 50px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px 0 30px;
+}
+
+.card-description {
+  font-size: 20px;
+  color: #555;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+
+.header-text {
+  color: #2E2F35;
+  font-size: 65px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 103px;
+  word-wrap: break-word;
+  letter-spacing: -3.5px;
+  text-align: center;
+  align-self: center;
+  margin: 0 0 20px 0;
+  font-family: Inter, sans-serif;;
+}
+
+.highlighted-text {
+  font-family: 'Covered By Your Grace', cursive;
+  color: #44797F;
+  font-size: 65px;
+  font-weight: 400;
+  line-height: 103px;
+  word-wrap: break-word;
+  
+  display: inline-block;
+}
+
+.section7{
+  height: 750px;
+  padding: 30px;
+  font: 600 56px/1 Inter, sans-serif;
+  color: #000000d2;
+  background-color: rgb(227, 248, 248);
+
+}
+.steps{
+  display: flex;
+  gap: 80px;
+}
+.step-no{
+  color: rgba(0, 147, 135, 0.40);
+  font: 400 60px/1 'Covered By Your Grace', cursive;
+}
+.section7body{
+  margin-left: 200px;
+}
+
+.section8{
+  font: 600 64px/1 Inter, sans-serif;
+  height: 750px;
+  padding: 30px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.brand-name-section8{
+  font-size: 64px;
+    font-family: "FONTSPRING DEMO - Freigeist Black", -apple-system, Roboto,
+    Helvetica, sans-serif;
+  font-weight: 500;
+  color: rgba(255, 28, 29, 1);
+}
+.section9{
+  background-color: rgba(255, 28, 29, 1);
+    height: 680px;
+  padding: 30px;
+}
+.section9 h2{
+   font-size: 111px;
+  font-weight: 700;
+  line-height: 2;
+  margin-left: 30px;
+}
+.ratings-navisensei__title-text {
+  color: rgba(232, 235, 243, 1);
+}
+
+.ratings-navisensei__title-brand {
+  font-family: "FONTSPRING DEMO - Freigeist Black", -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 850;
+  color: rgba(232, 235, 243, 1);
+}
+.ratings-navisensei__tagline {
+  color: rgba(255, 255, 255, 1);
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 59px;
+  margin-left: 50px;
+}
+
+.ratings-navisensei__button {
+  margin-top: 60px;
+  margin-left: 50px;
+  border-radius: 26px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 5px 5px 0 rgba(46, 47, 53, 1);
+  align-self: stretch;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.1px;
+  
+  padding: 30px 60px;
+  border: 3px solid rgba(46, 47, 53, 1);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ratings-navisensei__button:hover {
+  transform: translateY(-2px);
+  box-shadow: 7px 7px 0 rgba(46, 47, 53, 1);
+}
+
+.ratings-navisensei__button:focus {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}
+.ratings-navisensei__disclaimer {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 38px;
+  margin: 59px 0 0 60px;
+}
+.web-footer{
+  height: 500px;
+  background-color: rgba(232, 235, 243, 1);
+  padding-top: 80px;
+  padding-left: 30px;
+}
+.login-page{
+  height: 100vh;
+  background-image: url(./assets/Vector.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-box{
+ 
+  height: 78%;
+  background-color: #fff;
+  width: 53%;
+  border-radius: 3%;
+}

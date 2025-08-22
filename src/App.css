@@ -1,0 +1,1638 @@
+body{
+  max-width: 100%;
+}
+
+.hero-wrapper {
+  background: #fff;
+  display: flex;
+ 
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.nav-container {
+  background: #E0F8F2;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: start;
+  padding: 20px 1px 93px 80px;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  gap: 40px 160px;
+  font-family: Inter, sans-serif;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.logo {
+  aspect-ratio: 1.68;
+  object-fit: contain;
+  width: 121px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.nav-links {
+  align-self: stretch;
+  display: flex;
+  min-width: 240px;
+  align-items: center;
+  gap: 40px 84px;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin: auto 0;
+}
+
+.nav-menu {
+  align-self: stretch;
+  display: flex;
+  min-width: 240px;
+  align-items: center;
+  gap: 40px 86px;
+  font-size: 20px;
+  color: #222;
+  font-weight: 500;
+  line-height: 2;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin: auto 0;
+}
+
+.nav-link {
+  align-self: stretch;
+  margin: auto 0;
+  color: #2E2F35;
+  text-decoration: none;
+}
+
+.nav-link-active {
+  color: #222;
+}
+
+.auth-buttons {
+  align-self: stretch;
+  display: flex;
+  min-width: 240px;
+  flex-direction: column;
+  font-size: 23px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.4;
+  justify-content: center;
+  width: 361px;
+  margin: auto 0;
+  padding: 2px 0;
+}
+
+.auth-buttons-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 40px 43px;
+  justify-content: space-between;
+}
+
+.login-btn {
+  
+  border-radius: 21px;
+  background: #fff;
+  box-shadow: 5px 5px 0px #2E2F35;
+  min-height: 60px;
+  color: #000;
+  width: 114px;
+  margin: auto 0;
+  padding: 14px 23px;
+  border: 3px solid #2E2F35;
+  font-weight: 600;
+  font-size: 22.50px;
+  text-align: left;
+}
+
+.signup-btn {
+  align-self: stretch;
+  border-radius: 21px;
+  background: #FF1C1D;
+  box-shadow: 5px 5px 0px #2E2F35;
+  color: #fff;
+  width: 204px;
+  margin: auto 0;
+  padding: 14px 34px;
+  border: 3px solid #2E2F35;
+  font-weight: 600;
+  font-size: 22.50px;
+}
+
+.hero-content {
+  position: relative;
+  display: flex;
+  min-height: 658px;
+  width: 100%;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  margin: 102px 0 -22px;
+}
+
+.hero-bg {
+  aspect-ratio: 1.64;
+  object-fit: contain;
+  width: 1124px;
+ 
+  position: absolute;
+  z-index: 0;
+  max-width: 100%;
+  right: -1px;
+  bottom: 29px;
+  height: 552px;
+}
+
+.hero-text {
+  align-self: stretch;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.hero-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.hero-title {
+  color: #000;
+  letter-spacing: -2.88px;
+  font: 600 72px Inter, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  min-height: 117px;
+  width: 973px;
+  max-width: 100%;
+  overflow: hidden;
+  color: #FF1C1D;
+  letter-spacing: -2.72px;
+  margin-bottom: 0px;
+  margin-top: 30px;
+  font: 850 68px "FONTSPRING DEMO - Freigeist Black", -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.hero-decoration {
+  aspect-ratio: 5.88;
+  object-fit: contain;
+  width: 300px;
+  margin-top: 22px;
+  max-width: 100%;
+  margin-top: 0px;
+}
+
+.hero-description {
+  align-self: stretch;
+  margin-top: 25px;
+  width: 582px;
+  max-width: 100%;
+  gap: 10px;
+  color: #58595D;
+  font: 500 25px/59px Inter, sans-serif;
+  z-index: 1;
+}
+
+.cta-section {
+  z-index: 1;
+  display: flex;
+  margin-top: 25px;
+  align-items: center;
+  gap: 7px;
+  justify-content: start;
+  flex-wrap: wrap;
+  background-color: none;
+}
+
+.cta-button {
+  border-radius: 26px;
+  background: #FF1C1D;
+  box-shadow: 5px 5px 0px #2E2F35;
+
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2.1px;
+  width: 238px;
+  margin: auto 0;
+  padding: 26px 33px;
+  font-size: 22.73px;
+  font-weight: 700;
+  border: 3px solid #2E2F35;
+  word-wrap: break-word;
+  
+}
+
+.instructor-rating {
+  align-self: stretch;
+  display: flex;
+  min-width: 240px;
+  flex-direction: column;
+  justify-content: start;
+  width: 251px;
+  margin: auto 0;
+}
+
+.rating-images {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  justify-content: start;
+}
+
+.rating-img {
+  aspect-ratio: 1.09;
+  object-fit: contain;
+  width: 35px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.rating-text {
+  align-self: stretch;
+  margin-top: 4px;
+  width: 100%;
+  gap: 10px;
+  color: #2E2F35;
+  text-align: center;
+  padding: 0 20px;
+  font: 500 24px/42px Inter, sans-serif;
+  padding-left: 0px;
+}
+
+/* Media Queries */
+/* @media (max-width: 991px) {
+  .hero-wrapper {
+    padding-bottom: 100px;
+  }
+  
+  .nav-container {
+    max-width: 100%;
+    padding: 0 0 100px 20px;
+  }
+  
+  .nav-content,
+  .nav-links,
+  .nav-menu {
+    max-width: 100%;
+  }
+  
+  .login-btn,
+  .signup-btn,
+  .cta-button {
+    padding: 0 20px;
+  }
+  
+  .hero-content {
+    max-width: 100%;
+    margin: 15px 0 10px;
+  }
+  
+  .hero-title {
+    max-width: 100%;
+    font-size: 40px;
+  }
+  
+  .hero-subtitle {
+    max-width: 100%;
+    font-size: 40px;
+  }
+  
+  .hero-description {
+    max-width: 100%;
+  }
+  
+  .rating-text {
+    padding: 0 20px;
+  }
+} */
+
+
+.trusted-section {
+  background-color: #fff;
+  display: flex;
+
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.section-title {
+  color: #2e2f35;
+  letter-spacing: -3.5px;
+  text-align: center;
+  align-self: center;
+  margin-top: 129px;
+  font-size: 87.16px;
+  font-family: Inter;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.highlight-text {
+  font-family: "FONTSPRING DEMO - Freigeist Black", -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 850;
+  color: #ff1c1d;
+}
+
+.instructors-grid {
+  align-self: center;
+  margin-top: 125px;
+  width: 100%;
+  max-width: 1240px;
+}
+
+.grid-container {
+  gap: 80px;
+  display: flex;
+}
+
+.instructor-logo {
+  aspect-ratio: 1.49;
+  object-fit: contain;
+  object-position: center;
+  width: 250px;
+  max-width: 100%;
+  flex-grow: 1;
+}
+
+.placeholder-logo {
+  background-color: #d9d9d9;
+  display: flex;
+  width: 248px;
+  height: 168px;
+  margin: 0 auto;
+}
+
+.features-section {
+  background-color: #e8ebf3;
+  display: flex;
+  margin-top: 221px;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 10px 181px;
+}
+
+.features-grid {
+  align-self: stretch;
+  display: flex;
+  margin-top: 180px;
+  width: 100%;
+  align-items: end;
+  gap: 40px 0px;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  display: flex;
+  min-width: 150px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  width: 304px;
+}
+.feature-item1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+ 
+}
+.feature-value {
+  color: #2e2f35;
+  letter-spacing: -3.5px;
+  text-align: center;
+  align-self: stretch;
+  margin: 0 0;
+  font: 700 94px/1 Inter, sans-serif;
+  width: fit-content;
+  padding-left: 40px;
+}
+
+.feature-icon {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: start;
+  width: 91px;
+  margin: auto 0;
+  padding: 14px 23px;
+}
+
+.feature-icon-img {
+  aspect-ratio: 0.61;
+  object-fit: contain;
+  object-position: center;
+  width: 45px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.feature-label {
+  color: #58595d;
+  text-align: center;
+  font: 500 17px/38px Inter, sans-serif;
+}
+.bars{
+  flex-direction: row;
+  width: fit-content;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 20px;
+  
+}
+.feature-bar {
+  align-items: flex-end;
+  border-radius: 26px;
+  background-color: #ff1c1d;
+  box-shadow: 5px 5px 0px #2e2f35;
+  display: flex;
+  width: 150px;
+  height: 250px;
+  border: 3px solid #2e2f35;
+}
+.feature-bar-value{
+  color: black;
+font-size: 24.48px;
+font-family: Inter;
+font-weight: 800;
+line-height: 38.47px;
+word-wrap: break-word;
+text-align: center;
+}
+.feature-bar-small {
+  align-items: flex-end;
+  border-radius: 26px;
+  background-color: #e2e2e2;
+  box-shadow: 5px 5px 0px #2e2f35;
+  display: flex;
+  width: 180px;
+  height: 98px;
+  border: 3px solid #2e2f35;
+}
+
+.feature-description {
+  color: #58595d;
+  text-align: center;
+  margin: 53px 0 -36px;
+  font: 500 23px/38px Inter, sans-serif;
+  width: 750px;
+}
+
+.cta-section2 {
+  background-color: #97d6df;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: start;
+  padding: 68px 14px 10px 43px;
+}
+
+.cta-content {
+  display: flex;
+  gap: 20px;
+}
+
+.cta-text {
+  color: #58595d;
+  font: 500 24px/38px Inter, sans-serif;
+}
+
+.cta-image {
+  aspect-ratio: 1.53;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  margin-top: 18px;
+}
+
+.cta-button2-container {
+  display: flex;
+  align-items: end;
+  gap: 28px;
+  font-family: Inter, sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin: 36px 0 0 57px;
+}
+
+.cta-button2 {
+  align-self: stretch;
+  border-radius: 21px;
+  background-color: #ff1c1d;
+  box-shadow: 5px 5px 0px #2e2f35;
+  gap: 10px;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  line-height: 1;
+  width: 204px;
+  padding: 14px 34px;
+  border: 3px solid #2e2f35;
+}
+
+.emoji-text {
+  font-size: 83px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+/* @media (max-width: 991px) {
+
+
+  .trusted-section {
+    padding-bottom: 100px;
+  }
+
+  .section-title {
+    max-width: 100%;
+    margin-top: 40px;
+    font-size: 40px;
+  }
+
+  .instructors-grid {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+
+  .grid-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .instructor-logo {
+    margin-top: 40px;
+  }
+
+  .placeholder-logo {
+    margin-top: 40px;
+  }
+
+  .features-section {
+    max-width: 100%;
+    margin-top: 40px;
+    padding: 0 20px 100px;
+  }
+
+  .features-grid {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+
+  .feature-value {
+    font-size: 40px;
+  }
+
+  .feature-icon {
+    padding: 0 20px;
+  }
+
+  .feature-description {
+    max-width: 100%;
+    margin: 40px 0 10px;
+  }
+
+  .cta-section2 {
+    max-width: 100%;
+    padding: 0 0 100px 20px;
+  }
+
+  .cta-content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .cta-image {
+    max-width: 100%;
+    margin-top: 28px;
+  }
+
+  .cta-button2-container {
+    max-width: 100%;
+    margin: 40px 0 10px;
+  }
+
+  .cta-button2 {
+    padding: 0 20px;
+  }
+
+  .emoji-text {
+    font-size: 40px;
+    line-height: 93px;
+  }
+}
+.instructor-section {
+  background-color: #97d6df;
+  padding: 68px 43px 143px;
+  width: 100%;
+}
+
+.instructor-content {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.instructor-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.instructor-text {
+  color: #58595d;
+  font: 500 24px/38px Inter, sans-serif;
+}
+
+.instructor-text p {
+  margin-bottom: 20px;
+}
+
+.instructor-cta {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-top: 36px;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 59px;
+}
+
+@media (max-width: 991px) {
+  .instructor-section {
+      padding: 40px 20px;
+  }
+
+  .instructor-content {
+      flex-direction: column;
+  }
+
+  .instructor-image {
+      width: 100%;
+  }
+
+  .instructor-cta {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+  }
+} */
+.instructor-section {
+  background-color: #97d6df;
+  padding: 68px 43px 143px;
+  width: 100%;
+}
+
+.instructor-content {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.instructor-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.instructor-text {
+  color: #58595d;
+  font: 500 24px/38px Inter, sans-serif;
+  width: 800px;
+}
+
+.instructor-text p {
+  margin-bottom: 20px;
+}
+
+.instructor-cta {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-top: 36px;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 59px;
+}
+
+.offer-section {
+  background-color: rgba(232, 235, 243, 1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  font-family: Inter, sans-serif;
+  text-align: center;
+  justify-content: center;
+  padding: 78px 80px;
+}
+
+.offer-container {
+  display: flex;
+  width: 100%;
+  max-width: 1237px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.offer-title {
+  color: rgba(46, 47, 53, 1);
+  font-size: 74px;
+  font-weight: 700;
+  line-height: 1.8;
+  letter-spacing: -3.5px;
+}
+
+.brand-name {
+  font-family: "FONTSPRING DEMO - Freigeist Black", -apple-system, Roboto,
+    Helvetica, sans-serif;
+  font-weight: 850;
+  color: rgba(255, 28, 29, 1);
+}
+
+.subtitle-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  font-family: "Covered By Your Grace", -apple-system, Roboto, Helvetica,
+    sans-serif;
+  color: rgba(0, 147, 135, 1);
+  font-weight: 400;
+  letter-spacing: -6.99px;
+  line-height: 175px;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.subtitle-text {
+  font-size: 79px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.subtitle-highlight {
+  color: rgba(68, 121, 127, 1);
+}
+
+.emoji {
+  font-size: 81px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.card-grid {
+  align-self: stretch;
+  display: flex;
+  margin-top: 25px;
+  width: 100%;
+  align-items: start;
+  gap: 38px 89px;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.card {
+  border-radius: 23px;
+  background-color: rgba(241, 241, 241, 1);
+  display: flex;
+  min-width: 240px;
+  min-height: 474px;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  flex-grow: 1;
+  width: 282px;
+  padding: 36px 6px;
+}
+
+.card-content {
+  align-self: stretch;
+  display: flex;
+  min-width: 240px;
+  width: 321px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto 0;
+}
+
+.card-image {
+  aspect-ratio: 1.59;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  border-radius: 14px;
+}
+
+.card-title {
+  color: rgba(46, 47, 53, 1);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 35px;
+  align-self: stretch;
+  margin-top: 8px;
+}
+
+.card-description {
+  color: rgba(88, 89, 93, 1);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-top: 8px;
+}
+
+@media (max-width: 991px) {
+  .offer-section {
+    padding: 0 20px;
+  }
+
+  .offer-container {
+    max-width: 100%;
+  }
+
+  .offer-title {
+    max-width: 100%;
+    font-size: 40px;
+  }
+
+  .subtitle-wrapper {
+    max-width: 100%;
+  }
+
+  .subtitle-text {
+    max-width: 100%;
+    font-size: 40px;
+    line-height: 99px;
+  }
+
+  .emoji {
+    font-size: 40px;
+    line-height: 96px;
+  }
+
+  .card-grid {
+    max-width: 100%;
+  }
+}
+.section-container {
+  background-color: rgb(227, 248, 248);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 66px 74px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.header-text {
+  color: #2E2F35;
+  font-size: 74px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 103px;
+  word-wrap: break-word;
+  letter-spacing: -3.5px;
+  text-align: center;
+  align-self: center;
+  margin: 0 0 40px 0;
+}
+
+.highlighted-text {
+  font-family: 'Covered By Your Grace', cursive;
+  color: #44797F;
+  font-size: 79px;
+  font-weight: 400;
+  line-height: 103px;
+  word-wrap: break-word;
+  
+  display: inline-block;
+}
+
+.steps-container {
+  display: flex;
+  width: 100%;
+  max-width: 1061px;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.step {
+  display: flex;
+  min-height: 97px;
+  width: 100%;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.step-number-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+
+.step-number,
+.detailed-step-number,
+.final-step-number {
+  color: var(--primary-color-faded);
+  letter-spacing: 6.99px;
+  padding: 25px 30px;
+  font: 400 77px/1 'Covered By Your Grace', cursive;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.detailed-step-number1{
+  color: #009387;
+}
+.step-title,
+.final-step-title {
+  color: var(--text-color-faded);
+  letter-spacing: -0.87px;
+  font: 700 56px/1 Inter, sans-serif;
+  padding-right: 20px;
+}
+
+.detailed-step-container {
+  margin: 20px 0;
+  
+}
+
+.detailed-step {
+  display: flex;
+  gap: 36px;
+}
+
+.step-description-text {
+  max-width: 470px;
+}
+
+.step-title-large {
+  color: var(--text-color);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.87px;
+  margin: 0 0 20px 0;
+}
+
+.step-subtitle {
+  color: var(--subtitle-color);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.focusable {
+  outline: none;
+  border-radius: 4px;
+  color: rgba(0, 147, 135, 0.40);
+}
+
+.focusable:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+
+@media (max-width: 991px) {
+  .section-container {
+    padding: 40px 20px;
+  }
+
+  .header-text {
+    font-size: 40px;
+    line-height: 1.4;
+  }
+
+  .highlighted-text {
+    font-size: 50px;
+  }
+
+  .step-number,
+  .detailed-step-number,
+  .final-step-number {
+    font-size: 40px;
+    padding: 15px;
+  }
+
+  .step-title,
+  .final-step-title,
+  .step-title-large {
+    font-size: 32px;
+  }
+
+  .step-subtitle {
+    font-size: 20px;
+  }
+
+  .step,
+  .step-number-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .detailed-step {
+    flex-direction: column;
+  }
+
+  .step-description-text {
+    padding: 0 20px;
+  }
+}
+.testimonials-container {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  font-family: Inter, sans-serif;
+  padding: 72px 80px 150px;
+}
+
+.testimonials-wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1070px;
+  flex-direction: column;
+}
+
+.heading-text {
+  color: #2E2F35;
+  font-size: 74px;
+  font-weight: 700;
+  line-height: 133px;
+  letter-spacing: -3.5px;
+  text-align: center;
+  align-self: center;
+  margin: 0px;
+}
+
+.brand-name {
+  font-family: "FONTSPRING DEMO - Freigeist Black", -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 850;
+  color: #FF1C1D;
+}
+
+.highlight-text2 {
+  font-family: "Covered By Your Grace", -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 400;
+  color: #44797F;
+}
+
+.testimonials-grid {
+  display: flex;
+  margin-top: 162px;
+  align-items: start;
+  gap: 28px;
+  font-weight: 500;
+}
+
+.testimonial-card {
+  position: relative;
+  display: flex;
+  min-width: 240px;
+  min-height: 291px;
+  flex-direction: column;
+  width: 526px;
+  padding: 26px 0 26px 40px;
+}
+
+.card-border {
+  border-radius: 26px;
+  position: absolute;
+  min-height: 291px;
+  width: 526px;
+  right: 0;
+  bottom: 0;
+  height: 291px;
+  border: 3px solid #2E2F35;
+}
+
+.card-content {
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  max-width: 470px;
+  flex-direction: column;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 40px 123px;
+}
+
+.user-profile {
+  display: flex;
+  min-width: 240px;
+  align-items: center;
+  gap: 40px;
+}
+
+.profile-image {
+  aspect-ratio: 1;
+  object-fit: contain;
+  width: 85px;
+  border-radius: 175px;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  padding: 21px 2px 23px 0;
+}
+
+.user-name {
+  color: #2E2F35;
+  font-size: 21px;
+  line-height: 1;
+}
+
+.user-handle {
+  color: #58595D;
+  font-size: 19px;
+  line-height: 38px;
+}
+
+.social-icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  width: 42px;
+}
+
+.testimonial-text {
+  color: #58595D;
+  font-size: 23px;
+  line-height: 41px;
+}
+
+@media (max-width: 991px) {
+  .testimonials-container {
+    padding: 0 20px 100px;
+  }
+  
+  .testimonials-wrapper {
+    max-width: 100%;
+  }
+  
+  .heading-text {
+    max-width: 100%;
+    font-size: 40px;
+    line-height: 79px;
+  }
+  
+  .testimonials-grid {
+    margin-top: 40px;
+  }
+  
+  .testimonial-card {
+    max-width: 100%;
+  }
+  
+  .card-content {
+    max-width: 100%;
+  }
+  
+  .testimonial-text {
+    max-width: 100%;
+  }
+}
+.ratings-navisensei {
+  background-color: rgba(255, 28, 29, 1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: start;
+  font-family: Inter, sans-serif;
+  padding: 43px 80px 0;
+  z-index: 1;
+}
+
+.ratings-navisensei__content {
+  display: flex;
+  width: 100%;
+  max-width: 1072px;
+  flex-direction: column;
+  justify-content: start;
+  padding: 166px 0 80px;
+  z-index: 1;
+}
+
+.ratings-navisensei__header {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.ratings-navisensei__title {
+  font-size: 111px;
+  font-weight: 700;
+  line-height: 2;
+  margin: 0;
+}
+
+.ratings-navisensei__title-text {
+  color: rgba(232, 235, 243, 1);
+}
+
+.ratings-navisensei__title-brand {
+  font-family: "FONTSPRING DEMO - Freigeist Black", -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 850;
+  color: rgba(232, 235, 243, 1);
+}
+
+.ratings-navisensei__wrapper {
+  display: flex;
+  margin-top: 30px;
+  width: 100%;
+  flex-direction: column;
+  align-items: start;
+  padding: 0 46px 21px 0;
+}
+
+.ratings-navisensei__tagline {
+  color: rgba(255, 255, 255, 1);
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 59px;
+  margin: 0;
+}
+
+.ratings-navisensei__action {
+  align-self: stretch;
+  display: flex;
+  margin-top: 59px;
+  padding-right: 424px;
+  align-items: center;
+  gap: 40px 70px;
+  font-size: 17px;
+  color: rgba(46, 47, 53, 1);
+  text-align: center;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.ratings-navisensei__button {
+  border-radius: 26px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 5px 5px 0 rgba(46, 47, 53, 1);
+  align-self: stretch;
+  min-width: 240px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.1px;
+  line-height: 35px;
+  margin: auto 0;
+  padding: 38px 78px;
+  border: 3px solid rgba(46, 47, 53, 1);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ratings-navisensei__button:hover {
+  transform: translateY(-2px);
+  box-shadow: 7px 7px 0 rgba(46, 47, 53, 1);
+}
+
+.ratings-navisensei__button:focus {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}
+
+.ratings-navisensei__stats {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  line-height: 42px;
+  justify-content: start;
+  width: 238px;
+  margin: auto 0;
+}
+
+.ratings-navisensei__image {
+  aspect-ratio: 5.52;
+  object-fit: contain;
+  object-position: center;
+  width: 238px;
+}
+
+.ratings-navisensei__stats-text {
+  margin: 7px 0 0 0;
+}
+
+.ratings-navisensei__disclaimer {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 38px;
+  margin: 59px 0 0 0;
+}
+
+.rating-bg{
+  aspect-ratio: 1.64;
+  object-fit: contain;
+  width: 1124px;
+ 
+  position: absolute;
+  right: 0;
+  z-index: 0;
+  max-width: 100%;
+  align-self: right;
+}
+
+@media (max-width: 991px) {
+  .ratings-navisensei {
+    padding: 0 20px;
+  }
+
+  .ratings-navisensei__content {
+    max-width: 100%;
+    padding: 100px 0;
+  }
+
+  .ratings-navisensei__title {
+    max-width: 100%;
+    font-size: 40px;
+  }
+
+  .ratings-navisensei__wrapper {
+    max-width: 100%;
+    padding-right: 20px;
+  }
+
+  .ratings-navisensei__tagline {
+    max-width: 100%;
+  }
+
+  .ratings-navisensei__action {
+    max-width: 100%;
+    padding-right: 20px;
+    margin-top: 40px;
+  }
+
+  .ratings-navisensei__button {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .ratings-navisensei__disclaimer {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ratings-navisensei__button {
+    transition: none;
+  }
+}
+
+@media screen and (forced-colors: active) {
+  .ratings-navisensei__button {
+    border: 3px solid ButtonText;
+  }
+}
+.footer-container {
+  background-color: rgba(232, 235, 243, 1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 129px 0 100px;
+}
+
+.footer-wrapper {
+  width: 100%;
+}
+
+.footer-content {
+  gap: 20px;
+  display: flex;
+}
+
+.footer-left-column {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 50%;
+  margin-left: 0;
+}
+
+.footer-navigation {
+  z-index: 10;
+  display: flex;
+  margin-right: -1304px;
+  align-items: start;
+  gap: 40px 147px;
+  justify-content: start;
+}
+
+.footer-logo {
+  aspect-ratio: 3.5;
+  object-fit: contain;
+  object-position: center;
+  width: 343px;
+  min-width: 240px;
+}
+
+.footer-links-container {
+  display: flex;
+  min-width: 240px;
+  align-items: start;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.footer-company-links {
+  display: flex;
+  padding-right: 44px;
+  flex-direction: column;
+  align-items: start;
+  font-family: Inter, sans-serif;
+  color: rgba(46, 47, 53, 1);
+  width: 220px;
+}
+
+.footer-section-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 2.62px;
+  text-transform: uppercase;
+}
+
+.footer-link-list {
+  display: flex;
+  margin-top: 10  px;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 52px;
+  justify-content: start;
+}
+
+.footer-link {
+  margin-top: 23px;
+}
+
+.footer-info-links {
+  display: flex;
+  min-width: 240px;
+  padding-right: 55px;
+  flex-direction: column;
+  align-items: start;
+  color: rgba(46, 47, 53, 1);
+  width: 275px;
+  font: 600 20px/52px Inter, sans-serif;
+}
+
+.footer-contact-section {
+  display: flex;
+  min-width: 240px;
+  padding-right: 50px;
+  flex-direction: column;
+  align-items: start;
+  width: 419px;
+}
+
+.footer-email-wrapper {
+  display: flex;
+  margin-top: 30px;
+  width: 297px;
+  max-width: 100%;
+  gap: 17px;
+}
+
+.footer-email-icon-container {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+.footer-email-icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 42px;
+}
+
+.footer-email-text {
+  color: rgba(46, 47, 53, 1);
+  flex-grow: 1;
+  width: 230px;
+  margin: auto 0;
+  font: 600 19px/2 Inter, sans-serif;
+}
+
+.footer-location-text {
+  color: rgba(88, 89, 93, 1);
+  z-index: 10;
+  margin-top: 17px;
+  font: 500 20px/52px Inter, sans-serif;
+}
+
+.footer-right-column {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  position: absolute;
+  padding-top: 10px;
+  width: 50%;
+  margin-left: 20px;
+}
+
+.footer-copyright {
+  color: rgba(88, 89, 93, 1);
+  margin-top: 98px;
+  font: 700 16px/38px Inter, sans-serif;
+}
+
+.footer-text-highlight-red {
+  font-weight: 700;
+  color: rgba(255, 28, 29, 1);
+}
+
+.footer-text-highlight-orange {
+  font-weight: 700;
+  color: rgba(255, 109, 44, 1);
+}
+
+.footer-text-bold {
+  font-weight: 700;
+}
+
+@media (max-width: 991px) {
+  .footer-container {
+    padding: 100px 20px 100px 0;
+  }
+
+  .footer-wrapper {
+    max-width: 100%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .footer-left-column {
+    width: 100%;
+  }
+
+  .footer-navigation {
+    max-width: 100%;
+  }
+
+  .footer-links-container {
+    max-width: 100%;
+  }
+
+  .footer-link-list {
+    margin-top: 40px;
+  }
+
+  .footer-email-wrapper {
+    margin-top: 40px;
+  }
+
+  .footer-right-column {
+    width: 100%;
+  }
+
+  .footer-copyright {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
